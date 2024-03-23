@@ -11,3 +11,52 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 62.5% of 16px = 10px
 }
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  padding: 0.8rem 2rem;
+  border-bottom: 1px solid #181818;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header__logo-image {
+  width: 6rem;
+  height: 6rem;
+}
+
+.header__logo-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.header__nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header__nav-link {
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
