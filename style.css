@@ -2,6 +2,7 @@
 :root {
   --container-width: 1440px;
   --accent-color: #faff00;
+  --border-color: #181818;
 }
 /*** Variables End ***/
 
@@ -36,7 +37,7 @@ body {
 /*** Header Start ***/
 .header {
   padding: 0.8rem 2rem;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header__content {
@@ -138,7 +139,7 @@ body {
 /*** Intorduction Start ***/
 .introduction {
   --container-width: 1080px;
-  padding: 6.4rem 1.6rem;
+  padding: 0 1.6rem 6.4rem;
 }
 
 .introduction__content {
@@ -176,3 +177,30 @@ body {
   color: var(--accent-color);
 }
 /*** Introduction End ***/
+
+/*** Footer Start ***/
+.footer {
+  padding: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer__content {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__link .icon {
+  fill: currentColor;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__link .icon:hover {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+/*** Footer End ***/
