@@ -1,4 +1,11 @@
-/* CSS Reset */
+/*** Variables Start ***/
+:root {
+  --container-width: 1440px;
+  --accent-color: #faff00;
+}
+/*** Variables End ***/
+
+/*** CSS Reset Start ***/
 *,
 *::before,
 *::after {
@@ -11,14 +18,9 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 62.5% of 16px = 10px
 }
+/*** CSS Reset End ***/
 
-/* Variables */
-:root {
-  --container-width: 1440px;
-
-  --accent-color: #faff00;
-}
-
+/*** Global Start ***/
 body {
   background-color: #000000;
   color: #ffffff;
@@ -29,7 +31,9 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
 }
+/*** Global End ***/
 
+/*** Header Start ***/
 .header {
   padding: 0.8rem 2rem;
   border-bottom: 1px solid #181818;
@@ -59,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  gap: 3rem;
 }
 
 .header__nav {
@@ -79,3 +84,19 @@ body {
 .header__nav-link:hover {
   color: var(--accent-color);
 }
+
+.header__icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.header__icons .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.header__icons .icon:hover {
+  cursor: pointer;
+  fill: var(--accent-color);
+}
+/*** Header End ***/
