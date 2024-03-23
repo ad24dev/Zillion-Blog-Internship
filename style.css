@@ -67,6 +67,12 @@ body {
   gap: 3rem;
 }
 
+@media screen and (max-width: 739px) {
+  .header__right {
+    display: none;
+  }
+}
+
 .header__nav {
   flex-grow: 1;
   display: flex;
