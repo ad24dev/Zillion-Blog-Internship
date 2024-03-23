@@ -134,3 +134,45 @@ body {
   margin-top: 6rem;
 }
 /*** Hero End ***/
+
+/*** Intorduction Start ***/
+.introduction {
+  --container-width: 1080px;
+  padding: 6.4rem 1.6rem;
+}
+
+.introduction__content {
+  font-size: 1.6rem;
+}
+
+.introduction__heading,
+.introduction__subheading {
+  color: var(--accent-color);
+}
+
+.introduction__heading {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.introduction__subheading {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.introduction__text {
+  margin: 0.8rem 0;
+  text-align: justify;
+}
+
+.introduction__list {
+  list-style-type: disc;
+  margin-left: 1.8rem;
+}
+
+.introduction__list-item span,
+.introduction__list-item::marker {
+  color: var(--accent-color);
+}
+/*** Introduction End ***/
