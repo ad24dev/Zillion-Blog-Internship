@@ -67,18 +67,21 @@ body {
   gap: 3rem;
 }
 
-@media screen and (max-width: 739px) {
-  .header__right {
-    display: none;
-  }
-}
-
 .header__nav {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 3rem;
+}
+
+@media screen and (max-width: 739px) {
+  .header__right {
+    justify-content: flex-end;
+  }
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__nav-link {
