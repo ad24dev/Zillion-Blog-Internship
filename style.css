@@ -39,7 +39,7 @@ body {
   border-bottom: 1px solid #181818;
 }
 
-.header .container {
+.header__content {
   display: flex;
 }
 
@@ -100,3 +100,37 @@ body {
   fill: var(--accent-color);
 }
 /*** Header End ***/
+
+/*** Hero Start ***/
+.hero {
+  padding: 6.4rem 1.6rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__heading,
+.hero__subheading {
+  font-family: "Ink Free", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.hero__heading {
+  color: var(--accent-color);
+}
+
+.hero__subheading {
+  margin-top: 3rem;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 80rem;
+  margin-top: 6rem;
+}
+/*** Hero End ***/
